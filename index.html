@@ -1,0 +1,691 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="The Tire Disciples - Your trusted source for new and used tires. Quality tires at competitive prices with expert installation services.">
+    <title>The Tire Disciples | New & Used Tires</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript" src="https://sandbox.web.squarecdn.com/v1/square.js"></script>
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <div class="container">
+                <div class="nav-content">
+                    <div class="logo">
+                        <img src="https://images2.imgbox.com/11/44/C3ZJ14pN_o.png" alt="The Tire Disciples" class="logo-image">
+                    </div>
+                    <ul class="nav-menu">
+                        <li><a href="#home" class="nav-link">Home</a></li>
+                        <li><a href="#services" class="nav-link">Services</a></li>
+                        <li><a href="#inventory" class="nav-link">Inventory</a></li>
+                        <li><a href="#contact" class="nav-link">Contact</a></li>
+                    </ul>
+                    <div class="cart-icon" onclick="openCart()">
+                        <span class="cart-emoji">🛒</span>
+                        <span class="cart-count" id="cart-count">0</span>
+                    </div>
+                    <div class="hamburger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">Your Source for Quality Tires</h1>
+                <p class="hero-description">New & Used Tires • Loyalty Benefits • Competitive Prices</p>
+                <div class="hero-buttons">
+                    <a href="#inventory" class="btn btn-primary">Browse Inventory</a>
+                    <a href="#contact" class="btn btn-secondary">Contact</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="services">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Our Services</h2>
+                <p class="section-subtitle">Complete tire solutions for all your needs</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <img src="https://www.tires-easy.com/blog/wp-content/uploads/2023/12/26232508/steptodown.com112078.jpg" alt="New Tires" class="service-image">
+                    </div>
+                    <h3 class="service-title">New Tires</h3>
+                    <p class="service-description">Premium brand new tires from top manufacturers. All sizes available for cars, trucks, and SUVs.</p>
+                    <ul class="service-list">
+                        <li>Latest models</li>
+                        <li>Full warranty</li>
+                        <li>Professional installation</li>
+                    </ul>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <img src="https://s3-media0.fl.yelpcdn.com/bphoto/MSHpvmBzJUjJl5nrAJ_mAA/1000s.jpg" alt="Used Tires" class="service-image">
+                    </div>
+                    <h3 class="service-title">Used Tires</h3>
+                    <p class="service-description">Quality inspected used tires that offer great value without compromising safety or performance.</p>
+                    <ul class="service-list">
+                        <li>Thoroughly inspected</li>
+                        <li>Good tread depth</li>
+                        <li>Budget-friendly</li>
+                        <li>Various sizes available</li>
+                    </ul>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <img src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXfMm9fs4hhNwSqqeXY36Bb9gOQBhlRhudbehUSZqUwXxmtbiTPrSKMACDC6n2tJFHPL_PYPTKYOjBp8XUjiJ3VALJez0ltQGoHFANFBfxPX8j2GfPBreGax-mnFF04crp3ZyK_gbVVd8gbiHTZpJRUNrk-b?key=94Ln4-nRRFQl_0MCD3CRvw" alt="Tire Inspection" class="service-image">
+                    </div>
+                    <h3 class="service-title">Tire Inspection</h3>
+                    <p class="service-description">Comprehensive tire inspection to assess condition, tread depth, and overall safety.</p>
+                    <ul class="service-list">
+                        <li>Tread depth check</li>
+                        <li>Pressure inspection</li>
+                        <li>Wear pattern analysis</li>
+                        <li>Safety assessment</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="new-inventory" class="inventory">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">New Tires</h2>
+                <p class="section-subtitle">Brand new tires in stock - Click for more photos</p>
+            </div>
+            
+            <div class="tires-grid">
+                <!-- GoodYear Wrangler SR-A -->
+                <div class="tire-card" data-tire-id="7">
+                    <div class="tire-badge" style="background-color: #2a9d8f;">NEW</div>
+                    <img src="https://scontent-mia3-2.xx.fbcdn.net/v/t39.84726-6/627573324_2395195720927097_7798787200823898196_n.jpg?stp=dst-jpg_p720x720_tt6&_nc_cat=105&ccb=1-7&_nc_sid=92e707&_nc_ohc=FHfSxBw1lCQQ7kNvwEI-IOn&_nc_oc=Adl_8T6DkQzWG9u2-Lfx4vfAxiwU_1cWNZla-rQ6YZUgcXO6nmEY2Tp-BREbHVNFZXUMGPsljkfEE0RWe4cjCJO6&_nc_zt=14&_nc_ht=scontent-mia3-2.xx&_nc_gid=53IWCfuvHrngTxqs-7YYtA&oh=00_AfvxBWQx3O90M3GD_IVFHvqW-ltRQgnZdjjBVyo89NxE9g&oe=698E9BCA" alt="GoodYear Wrangler SR-A" class="tire-image">
+                    <div class="tire-info">
+                        <h3 class="tire-title">GoodYear Wrangler SR-A</h3>
+                        <div class="tire-details">
+                            <div class="tire-detail-item">
+                                <span class="detail-label">Size:</span>
+                                <span class="detail-value">P265/70R17</span>
+                            </div>
+                            <div class="tire-detail-item">
+                                <span class="detail-label">Tread:</span>
+                                <span class="detail-value">100%</span>
+                            </div>
+                            <div class="tire-detail-item">
+                                <span class="detail-label">Age:</span>
+                                <span class="detail-value">25</span>
+                            </div>
+                            <div class="tire-detail-item">
+                                <span class="detail-label">Includes:</span>
+                                <span class="detail-value">Wheels</span>
+                            </div>
+                        </div>
+                        <div class="tire-price">$595.00</div>
+                        <div class="tire-actions">
+                            <button class="btn btn-secondary view-photos-btn" onclick="openTireModal(7)">View Photos</button>
+                            <button class="btn btn-primary add-to-cart-btn" onclick="addToCart(7)">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- LT285/75R16 Brand New -->
+                <div class="tire-card" data-tire-id="8">
+                    <div class="tire-badge" style="background-color: #2a9d8f;">NEW</div>
+                    <img src="https://scontent-mia5-1.xx.fbcdn.net/v/t39.84726-6/626004635_781777751631482_2910114379526388019_n.jpg?stp=dst-jpg_p720x720_tt6&_nc_cat=104&ccb=1-7&_nc_sid=92e707&_nc_ohc=vAVL0Swr-G4Q7kNvwEoeVrS&_nc_oc=Adm3IX96I9RJgRoMu_rjpS7sx7BKCt9QPvnpl_lUqzn0p56kr8DwSpaHgQZ2yFGKAZZHLTPFCXaDK7M2qE0C-xyx&_nc_zt=14&_nc_ht=scontent-mia5-1.xx&_nc_gid=3zrFtyVN-3X3-efJ--dTtg&oh=00_Afs-e8bmhZXUpJ9WPrXwjQqRzaleChn0X9qllkM9h-LPWg&oe=698EBAE2" alt="LT285/75R16 Brand New" class="tire-image">
+                    <div class="tire-info">
+                        <h3 class="tire-title">LT285/75R16 (Brand New)</h3>
+                        <div class="tire-details">
+                            <div class="tire-detail-item">
+                                <span class="detail-label">Size:</span>
+                                <span class="detail-value">LT285/75R16</span>
+                            </div>
+                            <div class="tire-detail-item">
+                                <span class="detail-label">Tread:</span>
+                                <span class="detail-value">100%</span>
+                            </div>
+                            <div class="tire-detail-item">
+                                <span class="detail-label">Age:</span>
+                                <span class="detail-value">20</span>
+                            </div>
+                            <div class="tire-detail-item">
+                                <span class="detail-label">Condition:</span>
+                                <span class="detail-value">Never Touched</span>
+                            </div>
+                        </div>
+                        <div class="tire-price">$165.00</div>
+                        <div class="tire-actions">
+                            <button class="btn btn-secondary view-photos-btn" onclick="openTireModal(8)">View Photos</button>
+                            <button class="btn btn-primary add-to-cart-btn" onclick="addToCart(8)">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="inventory" class="inventory">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Used Tires</h2>
+                <p class="section-subtitle">Quality used tires in stock - Click for more photos</p>
+            </div>
+            
+            <div class="tires-grid">
+                <!-- 35x12.50 R17 LT -->
+                <div class="tire-card" data-tire-id="1">
+                    <div class="tire-badge">USED</div>
+                    <img src="https://i.imgur.com/KhYNmQD.jpeg" alt="35x12.50 R17 LT" class="tire-image">
+                    <div class="tire-info">
+                        <h3 class="tire-title">35x12.50 R17 LT</h3>
+                        <div class="tire-details">
+                            <div class="tire-detail-item">
+                                <span class="detail-label">Size:</span>
+                                <span class="detail-value">35x12.50 R17 LT</span>
+                            </div>
+                            <div class="tire-detail-item">
+                                <span class="detail-label">Tread:</span>
+                                <span class="detail-value">Good</span>
+                            </div>
+                            <div class="tire-detail-item">
+                                <span class="detail-label">Age:</span>
+                                <span class="detail-value">2020</span>
+                            </div>
+                        </div>
+                        <div class="tire-price">$400.00</div>
+                        <div class="tire-actions">
+                            <button class="btn btn-secondary view-photos-btn" onclick="openTireModal(1)">View Photos</button>
+                            <button class="btn btn-primary add-to-cart-btn" onclick="addToCart(1)">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- LT 285-75-R16 -->
+                <div class="tire-card" data-tire-id="2">
+                    <div class="tire-badge">USED</div>
+                    <img src="https://i.imgur.com/BP5IX7Y.jpeg" alt="LT 285-75-R16" class="tire-image">
+                    <div class="tire-info">
+                        <h3 class="tire-title">LT 285-75-R16</h3>
+                        <div class="tire-details">
+                            <div class="tire-detail-item">
+                                <span class="detail-label">Size:</span>
+                                <span class="detail-value">LT 285-75-R16</span>
+                            </div>
+                            <div class="tire-detail-item">
+                                <span class="detail-label">Tread:</span>
+                                <span class="detail-value">Good</span>
+                            </div>
+                            <div class="tire-detail-item">
+                                <span class="detail-label">Year:</span>
+                                <span class="detail-value">2020</span>
+                            </div>
+                        </div>
+                        <div class="tire-price">$165.00</div>
+                        <div class="tire-actions">
+                            <button class="btn btn-secondary view-photos-btn" onclick="openTireModal(2)">View Photos</button>
+                            <button class="btn btn-primary add-to-cart-btn" onclick="addToCart(2)">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Milestar Patagonia M/T -->
+                <div class="tire-card" data-tire-id="4">
+                    <div class="tire-badge">USED</div>
+                    <img src="https://thumbs2.imgbox.com/d9/06/jCtwFeQa_t.jpeg" alt="Milestar Patagonia M/T" class="tire-image">
+                    <div class="tire-info">
+                        <h3 class="tire-title">Milestar Patagonia M/T</h3>
+                        <div class="tire-details">
+                            <div class="tire-detail-item">
+                                <span class="detail-label">Size:</span>
+                                <span class="detail-value">LT285/75R16</span>
+                            </div>
+                            <div class="tire-detail-item">
+                                <span class="detail-label">Tread:</span>
+                                <span class="detail-value">Good</span>
+                            </div>
+                            <div class="tire-detail-item">
+                                <span class="detail-label">Age:</span>
+                                <span class="detail-value">2020</span>
+                            </div>
+                        </div>
+                        <div class="tire-price">$395.00</div>
+                        <div class="tire-actions">
+                            <button class="btn btn-secondary view-photos-btn" onclick="openTireModal(4)">View Photos</button>
+                            <button class="btn btn-primary add-to-cart-btn" onclick="addToCart(4)">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 235/40R18 -->
+                <div class="tire-card" data-tire-id="5">
+                    <div class="tire-badge">USED</div>
+                    <img src="https://scontent-mia5-1.xx.fbcdn.net/v/t39.84726-6/630535654_1246756214231466_2486559604651912623_n.jpg?stp=dst-jpg_p960x960_tt6&_nc_cat=102&ccb=1-7&_nc_sid=92e707&_nc_ohc=2kPsLpt9moYQ7kNvwFg7uni&_nc_oc=AdnUDVJvSGbnApNop6S3hSSzcbkYdJXt5aSNuNsnOGbsxl2wLtHXy8BEpWJYtdXhiqwQZPlprxONzVum3qa0hVe3&_nc_zt=14&_nc_ht=scontent-mia5-1.xx&_nc_gid=7SGPa1ZBEysypbbp0ChM2w&oh=00_Afs3PQeUX1IyKlMb5ywVRaYUbV_Hj1Jc2tL8XFMHUocuUw&oe=698E9F92" alt="235/40R18" class="tire-image">
+                    <div class="tire-info">
+                        <h3 class="tire-title">235/40R18</h3>
+                        <div class="tire-details">
+                            <div class="tire-detail-item">
+                                <span class="detail-label">Size:</span>
+                                <span class="detail-value">235/40R18</span>
+                            </div>
+                            <div class="tire-detail-item">
+                                <span class="detail-label">Tread:</span>
+                                <span class="detail-value">80%</span>
+                            </div>
+                            <div class="tire-detail-item">
+                                <span class="detail-label">Age:</span>
+                                <span class="detail-value">23</span>
+                            </div>
+                        </div>
+                        <div class="tire-price">$225.00</div>
+                        <div class="tire-actions">
+                            <button class="btn btn-secondary view-photos-btn" onclick="openTireModal(5)">View Photos</button>
+                            <button class="btn btn-primary add-to-cart-btn" onclick="addToCart(5)">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 225/50R17 -->
+                <div class="tire-card" data-tire-id="6">
+                    <div class="tire-badge">USED</div>
+                    <img src="https://scontent-mia5-1.xx.fbcdn.net/v/t39.84726-6/625471100_873604068908176_6749590385708957818_n.jpg?stp=dst-jpg_s960x960_tt6&_nc_cat=102&ccb=1-7&_nc_sid=92e707&_nc_ohc=Unf7jwtpj4YQ7kNvwFFBLc0&_nc_oc=AdkIqgM-jM9g6iyK57Qxx1Co25ASSeVfPAfZzUx3LFE2B_Cc8u_sFNzsqbdxngT65-OytYax31ijHVBRBsGtc6V3&_nc_zt=14&_nc_ht=scontent-mia5-1.xx&_nc_gid=_SqZPj1f9tLA69JXGWlbEw&oh=00_AfuHzrpTHaZwwpcBnwla-e8v2XIAOCVxnA6ntjRUzZNdpw&oe=698EBDD3" alt="225/50R17" class="tire-image">
+                    <div class="tire-info">
+                        <h3 class="tire-title">225/50R17</h3>
+                        <div class="tire-details">
+                            <div class="tire-detail-item">
+                                <span class="detail-label">Size:</span>
+                                <span class="detail-value">225/50R17</span>
+                            </div>
+                            <div class="tire-detail-item">
+                                <span class="detail-label">Tread:</span>
+                                <span class="detail-value">70%</span>
+                            </div>
+                            <div class="tire-detail-item">
+                                <span class="detail-label">Age:</span>
+                                <span class="detail-value">24</span>
+                            </div>
+                        </div>
+                        <div class="tire-price">$225.00</div>
+                        <div class="tire-actions">
+                            <button class="btn btn-secondary view-photos-btn" onclick="openTireModal(6)">View Photos</button>
+                            <button class="btn btn-primary add-to-cart-btn" onclick="addToCart(6)">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- GoodYear Eagle Sport (3 tires) -->
+                <div class="tire-card" data-tire-id="9">
+                    <div class="tire-badge">USED</div>
+                    <img src="https://scontent-mia3-3.xx.fbcdn.net/v/t39.84726-6/622813210_33579062978408771_1507368693998995576_n.jpg?stp=dst-jpg_p720x720_tt6&_nc_cat=108&ccb=1-7&_nc_sid=92e707&_nc_ohc=5EPb4wnLDFMQ7kNvwFAv32a&_nc_oc=Adka17LClEXf2talSP3U1H7K3xA4uZuVJ6P-GyaHz-Z5kVc8q7ti9xxSXfnMSjv1siBpP1CBW5VR2XeGkGRUCV6W&_nc_zt=14&_nc_ht=scontent-mia3-3.xx&_nc_gid=mGtl1BZNAbCS7LEXZt39PA&oh=00_AfuP8iC6ziWsi63slfnxn2bHO0BwefrgEUngQXKbzwxg0Q&oe=698ED260" alt="GoodYear Eagle Sport" class="tire-image">
+                    <div class="tire-info">
+                        <h3 class="tire-title">GoodYear Eagle Sport (3 tires)</h3>
+                        <div class="tire-details">
+                            <div class="tire-detail-item">
+                                <span class="detail-label">Size:</span>
+                                <span class="detail-value">235/40R18</span>
+                            </div>
+                            <div class="tire-detail-item">
+                                <span class="detail-label">Tread:</span>
+                                <span class="detail-value">70%</span>
+                            </div>
+                            <div class="tire-detail-item">
+                                <span class="detail-label">Age:</span>
+                                <span class="detail-value">21</span>
+                            </div>
+                            <div class="tire-detail-item">
+                                <span class="detail-label">Quantity:</span>
+                                <span class="detail-value">3 Tires</span>
+                            </div>
+                        </div>
+                        <div class="tire-price">$150.00</div>
+                        <div class="tire-actions">
+                            <button class="btn btn-secondary view-photos-btn" onclick="openTireModal(9)">View Photos</button>
+                            <button class="btn btn-primary add-to-cart-btn" onclick="addToCart(9)">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Ditto Mud Grapper Extreme Terrain -->
+                <div class="tire-card" data-tire-id="10">
+                    <div class="tire-badge">USED</div>
+                    <img src="https://scontent-mia3-1.xx.fbcdn.net/v/t39.84726-6/622790765_885243503912928_4932661416562216526_n.jpg?stp=dst-jpg_p720x720_tt6&_nc_cat=111&ccb=1-7&_nc_sid=92e707&_nc_ohc=rPSx7pj5r0MQ7kNvwHQfLxG&_nc_oc=Adl9S7BVjjZgtdzMuhEt2WNH5cnP-R_PFh7BnFrsqVCVz_dENqlKdDbZo1iuZOHM2jc1Ri0Ac6Z3GL9pKDLgEzux&_nc_zt=14&_nc_ht=scontent-mia3-1.xx&_nc_gid=3BzHJ5bJB23IREB3J0V9RQ&oh=00_AfsJXDpEaWGBLtkk2KAyaPgwbnBCp-2G8VQOumzm68aWBA&oe=698E9B5C" alt="Ditto Mud Grapper Extreme Terrain" class="tire-image">
+                    <div class="tire-info">
+                        <h3 class="tire-title">Ditto "Mud Grapper" Extreme Terrain</h3>
+                        <div class="tire-details">
+                            <div class="tire-detail-item">
+                                <span class="detail-label">Size:</span>
+                                <span class="detail-value">33X12.50R20LT</span>
+                            </div>
+                            <div class="tire-detail-item">
+                                <span class="detail-label">Tread:</span>
+                                <span class="detail-value">80-85%</span>
+                            </div>
+                            <div class="tire-detail-item">
+                                <span class="detail-label">Age:</span>
+                                <span class="detail-value">24</span>
+                            </div>
+                        </div>
+                        <div class="tire-price">$175.00</div>
+                        <div class="tire-actions">
+                            <button class="btn btn-secondary view-photos-btn" onclick="openTireModal(10)">View Photos</button>
+                            <button class="btn btn-primary add-to-cart-btn" onclick="addToCart(10)">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Falken WildPeak R/T 01 (2 tires) -->
+                <div class="tire-card" data-tire-id="11">
+                    <div class="tire-badge">USED</div>
+                    <img src="https://scontent-mia3-3.xx.fbcdn.net/v/t39.84726-6/617793965_1434774791699697_7629536843246742019_n.jpg?stp=dst-jpg_p720x720_tt6&_nc_cat=109&ccb=1-7&_nc_sid=92e707&_nc_ohc=DIUfdqaoF1gQ7kNvwHYDIpC&_nc_oc=Adk2la04yvKA1_f1mSeWi1WwzZ_xAxiHzqP6tPiVoOsFdPJXD9iy7OWmLkCzzmehsd5U1UGc4o0_hQKEF48rVjqK&_nc_zt=14&_nc_ht=scontent-mia3-3.xx&_nc_gid=0QRaoH3zjmy48A54L5ZN4A&oh=00_Afu082Xa7uAV0U48uyTYBN8csvab-DnRYLJ_Gb7jIQnHOQ&oe=698EC8C0" alt="Falken WildPeak R/T 01" class="tire-image">
+                    <div class="tire-info">
+                        <h3 class="tire-title">Falken WildPeak R/T 01 (2 tires)</h3>
+                        <div class="tire-details">
+                            <div class="tire-detail-item">
+                                <span class="detail-label">Size:</span>
+                                <span class="detail-value">37 x 12.50R20 LT</span>
+                            </div>
+                            <div class="tire-detail-item">
+                                <span class="detail-label">Tread:</span>
+                                <span class="detail-value">60% (Moderate)</span>
+                            </div>
+                            <div class="tire-detail-item">
+                                <span class="detail-label">Age:</span>
+                                <span class="detail-value">2023</span>
+                            </div>
+                            <div class="tire-detail-item">
+                                <span class="detail-label">Quantity:</span>
+                                <span class="detail-value">2 Tires</span>
+                            </div>
+                        </div>
+                        <div class="tire-price">$245.00</div>
+                        <div class="tire-actions">
+                            <button class="btn btn-secondary view-photos-btn" onclick="openTireModal(11)">View Photos</button>
+                            <button class="btn btn-primary add-to-cart-btn" onclick="addToCart(11)">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="inventory-cta">
+                <h3>Looking for something specific?</h3>
+                <p>Call us or send a message to check availability on other sizes and brands</p>
+                <div class="cta-buttons">
+                    <a href="tel:303-895-7849" class="btn btn-primary">Call Now</a>
+                    <a href="#contact" class="btn btn-secondary">Send Message</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tire Photo Modal -->
+    <div id="tire-modal" class="tire-modal">
+        <div class="modal-content">
+            <span class="modal-close" onclick="closeTireModal()">&times;</span>
+            <h2 id="modal-tire-title" class="modal-title"></h2>
+            <div class="modal-tire-details" id="modal-tire-details"></div>
+            <div class="modal-gallery" id="modal-gallery">
+                <!-- Photos will be loaded here -->
+            </div>
+            <div class="modal-actions">
+                <a href="tel:303-895-7849" class="btn btn-primary">Call to Purchase</a>
+                <a href="#contact" class="btn btn-secondary">Send Inquiry</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Shopping Cart Modal -->
+    <div id="cart-modal" class="cart-modal">
+        <div class="cart-modal-content">
+            <div class="cart-header">
+                <h2>Shopping Cart</h2>
+                <span class="modal-close" onclick="closeCart()">&times;</span>
+            </div>
+            
+            <div id="cart-items" class="cart-items">
+                <!-- Cart items will be loaded here -->
+            </div>
+            
+            <div id="empty-cart" class="empty-cart" style="display: none;">
+                <p>Your cart is empty</p>
+                <button class="btn btn-primary" onclick="closeCart()">Continue Shopping</button>
+            </div>
+            
+            <div id="cart-summary" class="cart-summary" style="display: none;">
+                <div class="fulfillment-selection">
+                    <h3>How would you like to receive your tires?</h3>
+                    <div class="fulfillment-options">
+                        <label class="fulfillment-option">
+                            <input type="radio" name="fulfillmentMethod" value="pickup" checked onchange="window.tireCart.toggleDeliverySection()">
+                            <div class="fulfillment-option-content">
+                                <div class="fulfillment-option-text">
+                                    <strong>Pickup</strong>
+                                    <small>Pick up at our location - No delivery fee</small>
+                                </div>
+                            </div>
+                        </label>
+                        <label class="fulfillment-option">
+                            <input type="radio" name="fulfillmentMethod" value="delivery" onchange="window.tireCart.toggleDeliverySection()">
+                            <div class="fulfillment-option-content">
+                                <div class="fulfillment-option-text">
+                                    <strong>Delivery</strong>
+                                    <small>We'll deliver to your address</small>
+                                </div>
+                            </div>
+                        </label>
+                    </div>
+                </div>
+                
+                <div class="delivery-section" id="delivery-section" style="display: none;">
+                    <h3>Delivery Address</h3>
+                    <p class="delivery-note">Enter your address to calculate delivery fee</p>
+                    <div class="delivery-form">
+                        <input type="text" id="delivery-address" placeholder="Street Address *">
+                        <div class="address-row">
+                            <input type="text" id="delivery-city" placeholder="City *">
+                            <input type="text" id="delivery-state" placeholder="State" value="CO">
+                            <input type="text" id="delivery-zip" placeholder="ZIP Code *">
+                        </div>
+                        <button class="btn btn-secondary" id="calculate-delivery-btn" onclick="window.tireCart.calculateDeliveryFee()">
+                            Calculate Delivery Fee
+                        </button>
+                    </div>
+                    <div id="delivery-result" class="delivery-result" style="display: none;">
+                        <div class="delivery-info-item">
+                            <span>📍 Distance:</span>
+                            <span id="delivery-distance">-</span>
+                        </div>
+                        <div class="delivery-info-item">
+                            <span>🚚 Delivery Fee:</span>
+                            <span id="delivery-fee-display" class="delivery-fee-amount">$0.00</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="cart-total">
+                    <span>Subtotal:</span>
+                    <span id="cart-subtotal">$0.00</span>
+                </div>
+                <div class="cart-total" id="delivery-fee-line" style="display: none;">
+                    <span>Delivery Fee:</span>
+                    <span id="cart-delivery-fee">$0.00</span>
+                </div>
+                <div class="cart-total">
+                    <span>Tax (estimated):</span>
+                    <span id="cart-tax">$0.00</span>
+                </div>
+                <div class="cart-total cart-grand-total">
+                    <span>Total:</span>
+                    <span id="cart-total">$0.00</span>
+                </div>
+                
+                <div class="payment-method-selection">
+                    <h3>Select Payment Method</h3>
+                    <div class="payment-options">
+                        <label class="payment-option">
+                            <input type="radio" name="paymentMethod" value="card" checked>
+                            <div class="payment-option-content">
+                                <div class="payment-option-text">
+                                    <strong>Pay Online Now</strong>
+                                    <small>Credit/Debit Card via Square</small>
+                                </div>
+                            </div>
+                        </label>
+                        <label class="payment-option">
+                            <input type="radio" name="paymentMethod" value="cash-pickup">
+                            <div class="payment-option-content">
+                                <div class="payment-option-text">
+                                    <strong>Cash at Pickup</strong>
+                                    <small>Pay cash when you pick up</small>
+                                </div>
+                            </div>
+                        </label>
+                        <label class="payment-option">
+                            <input type="radio" name="paymentMethod" value="cash-delivery">
+                            <div class="payment-option-content">
+                                <div class="payment-option-text">
+                                    <strong>Cash on Delivery</strong>
+                                    <small>Pay cash when we deliver</small>
+                                </div>
+                            </div>
+                        </label>
+                    </div>
+                </div>
+                
+                <button id="checkout-button" class="btn btn-primary" onclick="window.tireCart.checkout()" style="width: 100%; margin-top: 1.5rem; padding: 15px; font-size: 1.1rem;">
+                    Proceed to Checkout
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Get In Touch</h2>
+                <p class="section-subtitle">Have questions? Need a quote? We're here to help!</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Contact Information</h3>
+                    <div class="info-item">
+                        <span class="info-icon">📞</span>
+                        <div class="info-text">
+                            <strong>Phone</strong>
+                            <p>303-895-7849</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-icon">📧</span>
+                        <div class="info-text">
+                            <strong>Email</strong>
+                            <p>Djwisamazing123@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-icon">📍</span>
+                        <div class="info-text">
+                            <strong>Pickup Address</strong>
+                            <p>1521 East King Ave.<br>Kingsland, GA 31548</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-icon">🕒</span>
+                        <div class="info-text">
+                            <strong>Hours</strong>
+                            <p>Mon-Fri: 8:00 AM - 6:00 PM<br>Sat: 9:00 AM - 4:00 PM<br>Sun: Closed</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form-wrapper">
+                    <form id="contact-form" class="contact-form">
+                        <div class="form-group">
+                            <label for="name">Name *</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone</label>
+                            <input type="tel" id="phone" name="phone">
+                        </div>
+                        <div class="form-group">
+                            <label for="vehicle">Vehicle Information</label>
+                            <input type="text" id="vehicle" name="vehicle" placeholder="Year, Make, Model">
+                        </div>
+                        <div class="form-group">
+                            <label for="tire-type">Tire Type</label>
+                            <select id="tire-type" name="tire_type">
+                                <option value="">Select an option</option>
+                                <option value="new">New Tires</option>
+                                <option value="used">Used Tires</option>
+                                <option value="not-sure">Not Sure</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message *</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-submit">
+                            <span class="btn-text">Send Message</span>
+                            <span class="btn-loader" style="display: none;">Sending...</span>
+                        </button>
+                        <div id="form-status" class="form-status"></div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="logo">
+                        <img src="https://images2.imgbox.com/11/44/C3ZJ14pN_o.png" alt="The Tire Disciples" class="logo-image">
+                    </div>
+                    <p>Your trusted source for quality new and used tires. Keeping you rolling.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#inventory">Inventory</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Contact Us</h4>
+                    <p>📞 303-895-7849</p>
+                    <p>📧 djsisamazing123@gmail.com</p>
+                    <div class="footer-logo-placeholder">
+                        <img src="https://images2.imgbox.com/11/44/C3ZJ14pN_o.png" alt="The Tire Disciples" class="footer-logo-image">
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 The Tire Disciples. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="tire-modal.js"></script>
+    <script src="cart.js"></script>
+</body>
+</html>
